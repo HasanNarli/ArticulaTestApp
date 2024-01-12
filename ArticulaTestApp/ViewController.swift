@@ -23,11 +23,11 @@ class ViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        // UITextView'i saydam yap
+        // Make UITextView transparent
         inputText.alpha = 0.5
-        // UITextView'in delegate'ini ayarla
+        // Set UITextView's delegate
         inputText.delegate = self
-        // Kullanıcıya metni girmesi için varsayılan bir metin ata
+        // Assign the user a default text to enter text
         inputText.textColor = UIColor.gray
         gTranslations.selectedLanguageIndex = 0 // Default: Turkish
         applyButtonSize()
@@ -58,7 +58,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     }
     
    
-        func applyButtonSize() {
+        func applyButtonSize() { // Increase the size of the selected button
             turkishButton.transform = gTranslations.selectedLanguageIndex == 0 ? CGAffineTransform(scaleX: 1.2, y: 1.2) : CGAffineTransform(scaleX: 1, y: 1)
             englishButton.transform = gTranslations.selectedLanguageIndex == 1 ? CGAffineTransform(scaleX: 1.2, y: 1.2) : CGAffineTransform(scaleX: 1, y: 1)
             spanishButton.transform = gTranslations.selectedLanguageIndex == 2 ? CGAffineTransform(scaleX: 1.2, y: 1.2) : CGAffineTransform(scaleX: 1, y: 1)
@@ -69,7 +69,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         gTranslations.selectedLanguageIndex = 1
         applyTranslations()
         applyButtonSize()
-        inputText.text = gTranslations.getWord(key: "actTextField") // Yeni dildeki placeholder metni
+        inputText.text = gTranslations.getWord(key: "actTextField") // Placeholder text in new language
         inputText.textColor = UIColor.gray
     }
     
@@ -78,7 +78,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         gTranslations.selectedLanguageIndex = 0
         applyTranslations()
         applyButtonSize()
-        inputText.text = gTranslations.getWord(key: "actTextField") // Yeni dildeki placeholder metni
+        inputText.text = gTranslations.getWord(key: "actTextField") // Placeholder text in new language
         inputText.textColor = UIColor.gray
     }
     
@@ -87,7 +87,8 @@ class ViewController: UIViewController, UITextViewDelegate {
         gTranslations.selectedLanguageIndex = 2
         applyTranslations()
         applyButtonSize()
-        
+        inputText.text = gTranslations.getWord(key: "actTextField") // Placeholder text in new language
+        inputText.textColor = UIColor.gray
 
     }
     

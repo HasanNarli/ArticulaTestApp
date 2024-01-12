@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController restorationIdentifier="HomeScreen" storyboardIdentifier="HomeScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="ArticulaTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="degradado" translatesAutoresizingMaskIntoConstraints="NO" id="aVh-gt-Tjr">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="İstediğiniz metini giriniz." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HdU-Jx-FAl">
+                                <rect key="frame" x="16" y="209" width="361" height="107"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="vbY-GI-J54"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INPUT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXh-gA-PxP">
+                                <rect key="frame" x="16" y="142" width="78" height="37"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="middleTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RE2-tR-H7M">
+                                <rect key="frame" x="16" y="488" width="240" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="nOa-Uo-pyq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OUTPUT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifn-Eu-jWO">
+                                <rect key="frame" x="16" y="434" width="103" height="37"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIS-js-sRM">
+                                <rect key="frame" x="16" y="337" width="361" height="68"/>
+                                <color key="backgroundColor" systemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="8nU-T7-BkV"/>
+                                    <constraint firstAttribute="height" constant="68" id="y41-nR-ojH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Push">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="separateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MnA-Pr-5z2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaO-lN-njp">
+                                <rect key="frame" x="222" y="61" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="48" buttonSize="small"/>
+                                <connections>
+                                    <action selector="englishTranslateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pAq-JQ-lgc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGh-GD-6pv">
+                                <rect key="frame" x="321" y="45" width="72" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="48 2"/>
+                                <connections>
+                                    <action selector="turkishTranslateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O7h-1s-8ow"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfJ-co-lwH">
+                                <rect key="frame" x="261" y="45" width="72" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="48 1"/>
+                                <connections>
+                                    <action selector="spanishTranslateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jzc-SI-33J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QIS-js-sRM" firstAttribute="trailing" secondItem="HdU-Jx-FAl" secondAttribute="trailing" id="61T-xX-hES"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QIS-js-sRM" secondAttribute="trailing" constant="16" id="75T-0z-hOL"/>
+                            <constraint firstItem="QIS-js-sRM" firstAttribute="leading" secondItem="RE2-tR-H7M" secondAttribute="leading" id="9Tf-E8-7XW"/>
+                            <constraint firstItem="QIS-js-sRM" firstAttribute="leading" secondItem="BXh-gA-PxP" secondAttribute="leading" id="Sac-bz-OXl"/>
+                            <constraint firstItem="QIS-js-sRM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="337" id="TGp-jh-YiM"/>
+                            <constraint firstItem="aVh-gt-Tjr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ujz-Hz-H1m"/>
+                            <constraint firstItem="QIS-js-sRM" firstAttribute="leading" secondItem="ifn-Eu-jWO" secondAttribute="leading" id="VOp-Pr-cvM"/>
+                            <constraint firstItem="HdU-Jx-FAl" firstAttribute="top" secondItem="BXh-gA-PxP" secondAttribute="bottom" constant="30" id="Yuv-G2-4zQ"/>
+                            <constraint firstItem="ifn-Eu-jWO" firstAttribute="top" secondItem="QIS-js-sRM" secondAttribute="bottom" constant="29" id="ZXP-ML-iYV"/>
+                            <constraint firstItem="QIS-js-sRM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cXk-QY-smV"/>
+                            <constraint firstItem="QIS-js-sRM" firstAttribute="leading" secondItem="HdU-Jx-FAl" secondAttribute="leading" id="f4T-be-yKy"/>
+                            <constraint firstItem="aVh-gt-Tjr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-59" id="mc3-m3-J3T"/>
+                            <constraint firstItem="RE2-tR-H7M" firstAttribute="top" secondItem="ifn-Eu-jWO" secondAttribute="bottom" constant="17" id="pVf-3A-G9X"/>
+                            <constraint firstItem="aVh-gt-Tjr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rGL-Fd-i0g"/>
+                            <constraint firstItem="QIS-js-sRM" firstAttribute="top" secondItem="HdU-Jx-FAl" secondAttribute="bottom" constant="21" id="tqI-P3-Zav"/>
+                            <constraint firstItem="QIS-js-sRM" firstAttribute="centerX" secondItem="aVh-gt-Tjr" secondAttribute="centerX" id="vQK-XM-wha"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="englishButton" destination="IaO-lN-njp" id="vwq-Zl-fDX"/>
+                        <outlet property="inputLabel" destination="BXh-gA-PxP" id="NA0-cL-xrn"/>
+                        <outlet property="inputText" destination="HdU-Jx-FAl" id="70y-UY-s1s"/>
+                        <outlet property="outputLabel" destination="ifn-Eu-jWO" id="7xx-GE-hac"/>
+                        <outlet property="outputTextLabel" destination="RE2-tR-H7M" id="aQd-AQ-TVU"/>
+                        <outlet property="pushBtn" destination="QIS-js-sRM" id="iil-SM-i7a"/>
+                        <outlet property="spanishButton" destination="DfJ-co-lwH" id="ovb-wW-UrL"/>
+                        <outlet property="turkishButton" destination="cGh-GD-6pv" id="EQL-bp-or1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="779" y="16"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="48" width="48" height="48"/>
+        <image name="48 1" width="48" height="48"/>
+        <image name="48 2" width="48" height="48"/>
+        <image name="degradado" width="750" height="1331"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="lightTextColor">
+            <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

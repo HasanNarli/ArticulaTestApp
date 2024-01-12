@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "INPUT:"; ObjectID = "BXh-gA-PxP"; */
+"BXh-gA-PxP.text" = "INPUT:";
+
+/* Class = "UITextView"; text = "İstediğiniz metini giriniz."; ObjectID = "HdU-Jx-FAl"; */
+"HdU-Jx-FAl.text" = "İstediğiniz metini giriniz.";
+
+/* Class = "UIButton"; configuration.title = "Push"; ObjectID = "QIS-js-sRM"; */
+"QIS-js-sRM.configuration.title" = "Push";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "QIS-js-sRM"; */
+"QIS-js-sRM.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "OUTPUT:"; ObjectID = "ifn-Eu-jWO"; */
+"ifn-Eu-jWO.text" = "OUTPUT:";
